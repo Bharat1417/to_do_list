@@ -70,7 +70,7 @@
         .list-item {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-start;
             background-color: #f9f9f9;
             padding: 8px;
             border-radius: 8px;
@@ -78,7 +78,15 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: 0.3s;
         }
-
+        .list-item p {
+            flex-grow: 1; 
+            margin-left: 10px;
+            font-size: 20px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            white-space: normal;
+            max-width: 80%; 
+        }
         .list-item:hover {
             background-color: #f1f1f1;
         }
